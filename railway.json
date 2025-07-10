@@ -1,4 +1,8 @@
 {
+  "build": {
+    "dockerfilePath": "docker/Dockerfile",
+    "context": "."
+  },
   "deploy": {
     "startCommand": "bundle exec rails db:migrate && bundle exec rails server -p $PORT"
   }
