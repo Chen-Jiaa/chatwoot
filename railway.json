@@ -1,7 +1,10 @@
 {
   "build": {
     "dockerfilePath": "docker/Dockerfile",
-    "context": "."
+    "context": ".",
+    "buildArgs": {
+      "GIT_SHA": "env:GIT_COMMIT_SHA"
+    }
   },
   "deploy": {
     "startCommand": "bundle exec rails db:migrate && bundle exec rails server -p $PORT"
