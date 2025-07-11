@@ -63,7 +63,7 @@ gem 'redis-namespace'
 gem 'activerecord-import'
 
 ##--- gems for server & infra configuration ---##
-gem 'dotenv-rails', '>= 3.0.0'
+# gem 'dotenv-rails', '>= 3.0.0'
 gem 'foreman'
 gem 'puma'
 gem 'vite_rails'
@@ -218,6 +218,7 @@ group :test do
 end
 
 group :development, :test do
+  gem 'dotenv-rails', '>= 3.0.0'
   gem 'active_record_query_trace'
   ##--- gems for debugging and error reporting ---##
   # static analysis

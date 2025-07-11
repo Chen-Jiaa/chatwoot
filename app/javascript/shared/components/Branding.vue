@@ -49,7 +49,7 @@ export default {
     v-if="globalConfig.brandName && !disableBranding"
     class="px-0 py-3 flex justify-center"
   >
-    <a
+    <!-- <a
       :href="brandRedirectURL"
       rel="noreferrer noopener nofollow"
       target="_blank"
@@ -63,7 +63,7 @@ export default {
       <span>
         {{ useInstallationName($t('POWERED_BY'), globalConfig.brandName) }}
       </span>
-    </a>
+    </a> -->
   </div>
   <div v-else class="p-3" />
 </template>
